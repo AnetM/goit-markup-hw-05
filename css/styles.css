@@ -135,6 +135,19 @@ h2 {
   color: var(--accent-color);
 }
 
+.link.current::after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 4px;
+  background-image: url(../img/line.svg);
+  background-size: contain;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .container.nav {
   display: flex;
   justify-content: space-between;

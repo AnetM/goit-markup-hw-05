@@ -51,9 +51,19 @@ body {
 
 /* Site nav */
 
+.nav-link-box {
+  height: 80px;
+  line-height: 80px;
+}
+
+.nav-link-box.relative {
+  position: relative;
+}
+
 .container-main-nav {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .list {
@@ -87,6 +97,10 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.site-nav .link {
+  line-height: 80px;
 }
 
 .container.nav {
@@ -165,7 +179,6 @@ body {
 
 .site-nav .link.current {
   color: var(--accent-color);
-  position: relative;
 }
 
 .mail,

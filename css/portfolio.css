@@ -67,6 +67,7 @@ h2 {
 .projects.list .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .item .title {
@@ -75,6 +76,8 @@ h2 {
 
 .project-image {
   position: relative;
+  height: 294px;
+  width: 370px;
 }
 
 .project-image::before {
@@ -139,6 +142,7 @@ h2 {
 
 .container.button-nav {
   padding-bottom: 50px;
+  padding-top: 94px;
 }
 
 /* Button */
@@ -176,4 +180,13 @@ h2 {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.nav-link-box {
+  height: 80px;
+  line-height: 80px;
+}
+
+.nav-link-box.relative {
+  position: relative;
 }
