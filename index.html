@@ -64,7 +64,14 @@
           ДЛЯ ВАШЕГО БИЗНЕССА
         </h1>
         <div class="button-wrapper">
-          <button type="button" class="button">Заказать услугу</button>
+          <button data-open-modal type="button" class="button">
+            Заказать услугу
+          </button>
+        </div>
+        <div class="backdrop is-hidden" data-backdrop>
+          <div class="modal">
+            <button data-close-modal>Закрыть</button>
+          </div>
         </div>
       </section>
 
@@ -253,6 +260,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- Клиенты -->
       <section>
         <div class="container clients">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -334,5 +343,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector("[data-open-modal]"),
+        closeModalBtn: document.querySelector("[data-close-modal]"),
+        backdrop: document.querySelector("[data-backdrop]"),
+      };
+
+      refs.openModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
+
+      refs.backdrop.addEventListener("click", logBackdropClick);
+
+      function toggleModal() {
+        refs.backdrop.classList.toggle("is-hidden");
+      }
+
+      function logBackdropClick() {
+        console.log("Это клик в бекдроп");
+      }
+    </script>
   </body>
 </html>
