@@ -4,6 +4,8 @@
   --hero-adress-title-color: #ffffff;
   --accent-color: #2196f3;
   --button-background-color: #f5f4fa;
+  --icon-background-color: #f5f4fa;
+  --icon-fill-color: #ffffff;
 }
 
 body {
@@ -258,4 +260,53 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
+}
+
+.join-list-container {
+  width: 206px;
+}
+
+.join-list-container .title {
+  color: var(--hero-adress-title-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.join-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+}
+
+.join-list-box {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-list-box:hover {
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.join-list-icon {
+  margin: auto;
+  fill: var(--icon-fill-color);
+}
+
+.container.footer {
+  display: flex;
+}
+
+.adress-container {
+  margin-right: 70px;
 }
