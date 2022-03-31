@@ -264,6 +264,19 @@ h2 {
   background-color: #ffffff;
 }
 
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
 /* Section */
 
 .section-title {
